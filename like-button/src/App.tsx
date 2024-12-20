@@ -1,4 +1,5 @@
 import './App.css'
+import { useState } from 'react';
 
 function App() {
   return (
@@ -9,7 +10,15 @@ function App() {
 }
 
 function LikeButton() {
-  return <span>いいねボタン予定地</span>
+  const [count, setCount] = useState(999);
+  const handleClick = () => {
+    setCount(count + 1);
+  };
+  return (
+    <span className='likeButton' onClick={handleClick}>
+      ♥ {count}
+    </span>
+  );
 }
 
 export default App
