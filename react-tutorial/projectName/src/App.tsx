@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 interface Product {
@@ -12,7 +9,7 @@ interface Product {
 function App() {
   const products: Product[] = [
     { title: "Cabbage", isFruit: false, id: 1 },
-    { title: "Garlic", isFruit: false, id: 2 },
+    { title: "Garlic", isFruit: true, id: 2 },
     { title: "Apple", isFruit: true, id: 3 },
   ];
 
